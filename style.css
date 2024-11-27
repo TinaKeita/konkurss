@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    padding: 25px;
+    background-color: #fcf6e3;
+    color: black;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+/* Light / Dark Mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #333; /* Dark background for the grid */
+}
+
+.dark-mode .item1 {
+    background-color: #867f58; /* Dark background for the grid */
+}
+
+.dark-mode .item2 {
+    background-color: #a18d67;
+}
+
+.dark-mode .item3,
+.dark-mode .item4,
+.dark-mode .item5,
+.dark-mode .item6,
+.dark-mode .item7,
+.dark-mode .item8,
+.dark-mode .item9 {
+    background-color: rgb(107, 92, 63);
+}
+
+.dark-mode .item13 {
+    background-color: #867f58;
+}
+
+.dark-mode .accordion {
+    background-color: #d63434;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    gap: 6px 6px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        'header header header header header header'
+        'ievads ievads ievads ievads jautajumi jautajumi'
+        'iem iem iem iem iem iem'
+        'iemesls1 iemesls1 iemesls2 iemesls2 iemesls3 iemesls3'
+        'iemesls4 iemesls4 iemesls5 iemesls5 iemesls6 iemesls6'
+        'puzle puzle puzle puzle puzleDati puzleDati'
+        'rezultati rezultati rezultati rezultati rezultati rezultati';
+    padding: 10px;
+}
+
+/* Grid Items */
+.item1 {
+    grid-area: header;
+    text-align: center;
+    background-color: #fff2ae;
+}
+
+.item2 {
+    grid-area: ievads;
+    text-align: center;
+    background-color: #FFECC8;
+    font-size: 24px;
+}
+
+.item3 {
+    grid-area: jautajumi;
+}
+
+.item4 {
+    grid-area: iemesls1;
+    text-align: center;
+    background-color: #FFD09B;
+}
+
+.item5 {
+    grid-area: iemesls2;
+    text-align: center;
+    background-color: #FFD09B;
+}
+
+.item6 {
+    grid-area: iemesls3;
+    text-align: center;
+    background-color: #FFD09B;
+}
+
+.item7 {
+    grid-area: iemesls4;
+    text-align: center;
+    background-color: #FFD09B;
+}
+
+.item8 {
+    grid-area: iemesls5;
+    text-align: center;
+    background-color: #FFD09B;
+}
+
+.item9 {
+    grid-area: iemesls6;
+    text-align: center;
+    background-color: #FFD09B;
+}
+
+.item10 {
+    grid-area: puzle;
+    /* background-color: #FFB0B0; */
+}
+
+.item11 {
+    grid-area: puzleDati;
+}
+
+.item12 {
+    grid-area: rezultati;
+}
+
+.item13 {
+    grid-area: iem;
+    background-color: #FFF7D1;
+}
+
+/* Puzzle Layout */
+.puzzle-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.puzzle-pieces,
+.drop-zone {
+    display: grid;
+    grid-template-columns: repeat(5, 90px); /* 5 columns */
+    grid-template-rows: repeat(3, 90px); /* 3 rows */
+    grid-gap: 10px;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    background-color: #ffffff;
+}
+
+.puzzle-pieces img,
+.drop-zone div {
+    border: 1px solid #ddd;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+}
+
+.drop-zone div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+/* Add a style for correct placement */
+.correct-placement {
+    border: 2px solid green;
+    background-color: rgba(0, 255, 0, 0.2);  /* Light green background */
+}
+
+/* Dashed red border for incorrect zones */
+#drop-zone div {
+    border: 2px dashed red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* Dark Mode for Puzzle */
+.dark-mode .puzzle-pieces {
+    background-color: #444; /* Darker background for the pieces area */
+}
+
+.dark-mode .drop-zone {
+    background-color: #444; /* Darker background for the drop zone */
+}
+
+.dark-mode .drop-zone div {
+    background-color: #666; /* Darker drop zone divs */
+}
+
+.dark-mode .puzzle-pieces img {
+    border-color: #bbb; /* Lighter border in dark mode */
+}
+
+/* Accordion Styles */
+.accordion {
+    background-color: #FFB0B0;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    row-gap: 6px;
+}
+
+.active,
+.accordion:hover {
+    background-color: #f16161;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+/* Button Style */
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+/* List Style */
+ul.a {
+    list-style-type: circle;
+}

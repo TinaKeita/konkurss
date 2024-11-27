@@ -1,0 +1,2 @@
+draggedPiece.style.width = '70px';  // Reset any width style
+draggedPiece.style.height = '70px'; // Reset any height style
